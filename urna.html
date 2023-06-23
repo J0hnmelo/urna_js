@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/urna.css">
+    <title>Urna Eletronica</title>
+</head>
+<body>
+ <main>
+    
+    <section>
+        <div id="pessoas">
+            <div id="prefeito">
+                <div id="imageBig"></div>
+                <span>PREFEITO</span>
+            </div>
+            <div id="Vice" class="exist no">
+                <div id="imageSmall"></div>
+                <span>VICE</span>
+            </div>
+        </div>
+        <div id="cargo">
+            <h3>Seu voto é para:</h3>
+            <span id="cargos">VEREADOR</span>
+        </div>
+        <div id="voto">
+            <div class="numeros pisca" id="quadrado1">0</div>
+            <div class="numeros " id="quadrado2">0</div>
+        </div>
+        <div id="candidato">
+            <h3>Candidato:</h3>
+            <p class="especificação">Nome: <span id="name"  class="info">FULANO</span></p>
+            <p class="especificação">Partido: <span id="partido" class="info">QQQ</span></p>
+            <p class="especificação">Vice: <span id="viceName" class="info">CICRANO</span></p>
+        </div>
+
+        <footer>
+            Pressione CONFIRMAR para confirmar seu voto 
+            <br>
+            Pressione CORRIGIR para corrigir o seu voto
+            <br>
+            Pressione BRANCO para votar em branco
+        </footer>
+    </section>
+    <aside>
+        <div id="linha1">
+            <input type="button" value="1" onclick="clicar('1')">
+            <input type="button" value="2" onclick="clicar('2')">
+            <input type="button" value="3" onclick="clicar('3')">
+        </div>
+        <div id="linha2">
+            <input type="button" value="4" onclick="clicar('4')">
+            <input type="button" value="5" onclick="clicar('5')">
+            <input type="button" value="6" onclick="clicar('6')">
+        </div>
+        <div id="linha3">
+            <input type="button" value="7" onclick="clicar('7')">
+            <input type="button" value="8" onclick="clicar('8')">
+            <input type="button" value="9" onclick="clicar('9')">
+        </div>
+        <div id="linha4">
+            <input type="button" value="0" onclick="clicar('0')">
+        </div>
+        <div id="linha5">
+            <input type="button" value="BRACO" id="branco" class="botoes" onclick="branco()">
+            <input type="button" value="CORRIGIR" id="corrigir" class="botoes" onclick="corrigir()">
+            <input type="button" value="CONFIRMAR" id="confirmar" class="botoes" onclick="confirmar()">
+        </div>
+    </aside>
+ </main>
+ <script src="scrpt/listaURNA.js"></script>
+ <script src="scrpt/urna.js"></script>
+</body>
+</html>
