@@ -215,10 +215,12 @@ footer {
     display: flex;
     width: 200%;
     justify-content: center;
+    font-weight: bold;
 }
 .avisoFim {
-    font-size: 5em;
+    font-size: 6em;
     position: relative;
-    top: -250%;
-    left: 160%;
+    top: -270%;
+    left: 170%;
+    font-weight: bold;
 }

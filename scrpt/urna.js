@@ -113,7 +113,7 @@ function confirmar(){
         }else{
             seuVotoPara.style.display = 'none'
             cargoVotado.innerHTML = ''
-            info.innerHTML = '<div class = "avisoFim">FIM!</div>'
+            info.innerHTML = '<div class = "avisoFim pisca">FIM!</div>'
             aviso.style.display = 'none'
             candidatosImg.style.display = 'none'
             numerosVoto.style.display = 'none'
